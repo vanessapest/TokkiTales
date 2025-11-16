@@ -36,7 +36,8 @@ public class PlayerMovement : MonoBehaviour
     {
         HorizontalMovement();
 
-        grounded = rb.Raycast(Vector2.down, ignoreTriggers: true);
+        // Extensions.cs -> prüft, ob direkt unter dem Spieler Boden ist
+        grounded = rb.Raycast(Vector2.down, ignoreTriggers: true); 
 
         if (grounded)
         {
@@ -102,7 +103,7 @@ public class PlayerMovement : MonoBehaviour
 
         Vector2 leftEdge = mainCamera.ScreenToWorldPoint(Vector2.zero);
         Vector2 rightEdge = mainCamera.ScreenToWorldPoint(new Vector2(Screen.width, Screen.height));
-        position.x = Mathf.Clamp(position.x, leftEdge.x + 0.5f, rightEdge.x - 0.5f); // player stays inside boundaries, outside of camera
+        position.x = Mathf.Clamp(position.x, leftEdge.x + 0.5f, rightEdge.x - 0.5f); // Spieler darf nicht aus der Kamera herauslaufen
 
         rb.MovePosition(position);
     }

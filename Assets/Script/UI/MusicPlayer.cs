@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+// Hintergrund Musik wird durchgehen während des Spiels gespielt
 public class MusicPlayer : MonoBehaviour
 {
     private static MusicPlayer instance;

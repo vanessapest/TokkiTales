@@ -2,6 +2,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 
+// misst die Spielzeit in Sekunden
 public class GameTimer : MonoBehaviour
 {
     public static GameTimer Instance { get; private set; }

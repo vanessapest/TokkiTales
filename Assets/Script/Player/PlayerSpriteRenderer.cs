@@ -1,5 +1,6 @@
 using UnityEngine;
 
+// Animationslogik, entscheidet welcher Sprite gerade angezeigt wird
 public class PlayerSpriteRenderer : MonoBehaviour
 {
     private SpriteRenderer spriteRenderer;

@@ -1,11 +1,12 @@
 using UnityEngine;
 
+// Script bewegt Gegner automatisch
 public class EntityMovement : MonoBehaviour
 {
     public float speed = 2f;
     public Vector2 direction = Vector2.left; // enemy should start to the left
 
-    
+
     private new Rigidbody2D rigidbody;
     private Vector2 velocity;
 
